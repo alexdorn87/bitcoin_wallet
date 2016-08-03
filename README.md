@@ -15,16 +15,25 @@ You should have received a copy of the GNU General Public License along with thi
 ## Configuration
 
 Input config information to provisioning/hive-js.config
+
 COOKIE_SALT={{ COOKIE_SALT }}
+
 DB_HOST={{ DB_HOST }}
+
 DB_PASSWORD={{ DB_PASSWORD }}
+
 DB_PORT={{ DB_PORT }}
+
 DB_USER={{ DB_USER }}
+
 NODE_ENV={{ NODE_ENV }}
+
 PROXY_URL={{ PROXY_URL }}
 
 ## Start Proxy
 
 cd {{ app_dir }}
+
 export `cat {{ base_dir }}/{{ app_name }}.config`
+
 forever start -c "npm start" ./
