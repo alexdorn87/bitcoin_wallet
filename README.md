@@ -12,9 +12,19 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
+## Configuration
+
+Input config information to provisioning/hive-js.config
+COOKIE_SALT={{ COOKIE_SALT }}
+DB_HOST={{ DB_HOST }}
+DB_PASSWORD={{ DB_PASSWORD }}
+DB_PORT={{ DB_PORT }}
+DB_USER={{ DB_USER }}
+NODE_ENV={{ NODE_ENV }}
+PROXY_URL={{ PROXY_URL }}
+
 ## Start Proxy
 
 cd {{ app_dir }}
 export `cat {{ base_dir }}/{{ app_name }}.config`
-#forever start server/server.js
 forever start -c "npm start" ./
