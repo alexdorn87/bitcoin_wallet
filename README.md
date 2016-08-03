@@ -1,11 +1,6 @@
 alexcoin-js
 =======
 
-Work in progress
-
-## Development
-
-This is a private development dedicated to Auroracoin.
 
 ## License
 
