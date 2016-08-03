@@ -1,0 +1,14 @@
+{
+  "name": "hive-ticker-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "GPL-2.0+",
+  "dependencies": {
+    "xhr": "^1.4.1"
+  },
+"browserify": {
+"transform": ["envify","brfs"]
+}
+}

@@ -1,0 +1,16 @@
+<h2 class="_subtitle">{{translate("Your passphrase")}}</h2>
+<p class="_passphrase">{{passphrase}}</p>
+
+
+<p class="passphrase__warning">{{translate("Your passphrase will not be shown again.")}}<br />
+  {{translate("Without it you will lose access to your wallet.")}}</p>
+<div class="passphrase__accept">
+  <div id="check" class="_checkbox" on-click="toggle-check">
+    {{#checked}}
+      <div id="check" class="_check"></div>
+    {{/checked}}
+  </div>
+
+  <p class="_checktext">{{translate("I have written down or otherwise securely stored my passphrase")}}</p>
+</div>
+
